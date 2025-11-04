@@ -32,7 +32,31 @@ LinguaNews teaches reading in a target language using real news articles. Imagin
 3. As a user, I want to filter articles by vocabulary, topic and difficulty so that I can find content that matches my level and interests.
 
 
-## 0.1 
+## 0.1 Onboarding and Target Language Assignment
+
+**Given** a user has created an account and associated their email (used as primary key)  
+**When** the user selects `TargetLanguage = Spanish` during onboarding  
+**Then** the system should:
+- Update the user profile with the selected target language
+- Persist the `TargetLanguage` value for future sessions
+- Use the assigned language to filter articles in `/Articles/Feed`
+- 
+
+### Edge Case: No Language Selected
+**Given** a user completes onboarding without selecting a target language  
+**Then** the system should:
+- Prompt the user to choose a language before accessing `/Articles/Feed`
+- Default to a fallback language (e.g., English) if allowed by business rules
+- Log the missing preference for analytics or follow-up
+
+
+### Error Case: Invalid Language Code
+**Given** a user selects a language not supported by NewsAPI or the application (e.g., `"Klingon"`)  
+**Then** the system should:
+- Display a validation error or fallback message
+- Prevent submission until a valid language is selected
+- Avoid storing unsupported values in the user profile
+
 ---
 
 ## 1.1 Article ingestion and feed
