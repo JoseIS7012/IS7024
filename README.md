@@ -10,9 +10,9 @@ LinguaNews teaches reading in a target language using real news articles. Imagin
 
 ## 📡 Data Sources
 
-- NewsAPI  
-- Dictionary / Translation API (DeepL)  
-- CEFR Word Difficulty Database (Cathoven API)  
+- [NewsAPI](https://newsapi.org/)  
+- [DeepL Dictionary / Translation API](https://www.deepl.com/en/products/api)  
+- [Cathoven CEFR Word Difficulty Database](https://www.cathoven.com/)  
 - [1000 Most Common Words API](https://rapidapi.com/vicscodes/api/1000-most-common-words) (used for difficulty heuristics)  
 
 ---
@@ -38,7 +38,7 @@ LinguaNews teaches reading in a target language using real news articles. Imagin
 - Update the user profile with the selected target language
 - Persist the `TargetLanguage` value for future sessions
 - Use the assigned language to filter articles in `/Articles/Feed`
-- 
+
 
 ### Edge Case: No Language Selected
 **Given** a user completes onboarding without selecting a target language  
