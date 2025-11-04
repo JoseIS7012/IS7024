@@ -1,7 +1,7 @@
 # IS7024
 Repository for IS7024 Group Project
 
-
+![Logo](/LingaNews.png)
 # LinguaNews
 
 ## 📰 Introduction
