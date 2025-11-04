@@ -1,11 +1,10 @@
-# IS7024
-Repository for IS7024 Group Project
-
+# IS7024 Group Project
+### Clay Caddell, Jose Esquivel, Karthik Raturi
 ![Logo](/LingaNews.png)
 # LinguaNews
 
 ## 📰 Introduction
-LinguaNews teaches reading in a target language using real news articles. Imagine the ability to build a workable list of vocabulary using real-world news articles that are updated in real time and rank various articles and vocabulary based on difficulty and frequency.
+LinguaNews teaches reading in a target language using real news articles. Imagine the ability to build a workable list of vocabulary using real-world news articles that are updated in real-time and rank/sort various articles based on difficulty and word frequency.
 
 ---
 
@@ -15,7 +14,6 @@ LinguaNews teaches reading in a target language using real news articles. Imagin
 - Dictionary / Translation API (DeepL)  
 - CEFR Word Difficulty Database (Cathoven API)  
 - [1000 Most Common Words API](https://rapidapi.com/vicscodes/api/1000-most-common-words) (used for difficulty heuristics)  
-- Quiz building API (e.g., quizapi.io)
 
 ---
 
@@ -363,7 +361,7 @@ And no articles in the current feed match that difficulty level
 - Display the message `"No articles found for selected difficulty level"`
 - Offer suggestions to adjust filters or try a different category
 - Avoid showing an empty or broken layout
-- 
+
 
 ### Error Case: Difficulty Metadata Missing
 
