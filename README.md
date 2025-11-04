@@ -38,4 +38,4 @@ LinguaNews teaches reading in a target language using real news articles. Imagin
 
 ## 1.1 Article Ingestion and Feed
 
-### ✅ Article Feed
+### Article Feed
